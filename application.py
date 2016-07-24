@@ -13,7 +13,7 @@ app.secret_key = "ABC"
 def index_page():
     """Show an index page."""
 
-    return "<html><body>This is the homepage.</body></html>"
+    return render_template("index.html")
 
     # Alternately, we could make this a Jinja template in `templates/`
     # and return that result of rendering this, like:
