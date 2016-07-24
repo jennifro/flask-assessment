@@ -1,1 +1,40 @@
-/* Your styles can go here. */
+/* Your CSS goes here 
+Change the background color of all of the form input boxes and submit button to be yellow (can you do this for all input boxes without having to stylize each one independently?)
+Change the text in the last name field to be bold.
+Draw a border around the instruction box.*/
+
+h1 {
+    color: #ED6109;
+}
+
+h4 {
+    color: #29782F;
+}
+
+input {
+    background-color: yellow;
+}
+
+#last-name {
+    font-weight: bold;
+}
+
+form {
+    border: 3px solid #29782F;
+    padding: 15px;
+}
+
+h3 {
+    color: #ED6109;
+    font-weight: bold;
+}
+
+input[type=radio] {
+    margin-left: 20px;
+}
+
+input[type=submit] {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+

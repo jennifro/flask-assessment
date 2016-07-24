@@ -1,13 +1,33 @@
 <!doctype html>
 <html>
 <head>
-    <title>Skills-Web</title>
-    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+    <title>Skills-HTML-CSS</title>
 </head>
 <body>
 
-<!-- This page needs a form that can capture data about the user's
-first name, last name, job title, and salary requirements. -->
+<!-- your html goes here -->
+    <h1>Ubermelon Careers</h1>
+    <h4>Slave for the fastest-growing melon delivery service in the world!</h4>
+    <p>Ubermelon is the number one provider in melons on Earth. Serving 70 countries and counting, Ubermelon is able to connect local melon-growers with the hungry melon market. Be part of the exciting team that makes it all possible!</p><br>
 
+    <form action="/application" method="POST">
+        <h3>Fill out the form below to apply at Ubermelon!</h3>
+        <label for="first-name">First Name:</label>
+        <input id="first-name" type="text" name="firstname">&nbsp;&nbsp;&nbsp;
+        <label for="last-name">Last Name:</label>
+        <input id="last-name" type="text" name="lastname"><br><br>
+        
+        <label for="salary">What are your salary requirements?&nbsp;</label>
+        <input id="salary" type="number" name="salary" required="true" /><br><br>
+
+    
+        <legend>Select the position are you applying for:</legend><br>
+            <label><input type="radio" name="position" value="software engineer">Software Engineer</label><br>
+            <label><input type="radio" name="position" value="QA engineer">QA Engineer</label><br>
+            <label><input type="radio" name="position" value="product manager">Product Manager</label><br>
+
+        <input type="submit" name="submit" value="Submit">
+    </form>
 </body>
 </html>
